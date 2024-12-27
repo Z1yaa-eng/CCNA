@@ -1,0 +1,117 @@
+Network:A computer network is a digital telecommunications system that allows nodes to share resources.
+
+Nodes:
+We have a lot of nodes. We are going to see the most important ones:
+
+Routers
+Switches
+Firewalls
+Servers
+Clients
+Basic Network:
+A basic network consists of 3 materials:
+
+Two PCs
+One cable
+Some devices can act as either a client or a server depending on the situation.
+
+Switches:
+Switches have many interfaces, but they cannot connect directly to the internet. To connect two branches or access the internet, we need routers.
+
+Ethernet:
+Ethernet is a collection of network protocols.
+We need these protocols because they provide an understandable language for the whole world.
+
+Network Speed:
+Network speed is measured in bits per second.
+8 bits equals 1 byte.
+
+In 2 routers, it is going to be a serial connection, so 1 byte goes like 1 bit at a time.
+Base refers to baseband signaling.
+The copper cables used in Ethernet standards are UTP cables.
+
+UTP:
+
+Unshielded (U): Means the wires have no metallic shield, so they are vulnerable to electrical interference.
+Twisted (T): Protects against EMI (Electromagnetic Interference).
+Pair: Means two cables are twisted together.
+We have many cables with different pairs.
+Some interfaces are not RJ-45, so we need SFP transceivers to use them correctly.
+
+Fiber Optic Cables:
+Fiber optic cables send light over glass. These cables have 4 outputs.
+
+OSI Models (Open Systems Interconnection Model):
+The OSI model has 7 layers:
+
+Application
+Presentation
+Session
+Transport
+Network
+Data Link
+Physical
+Application Layer:
+This layer is closest to the end user (the client itself).
+It interacts with software applications, for example, web browsers like Chrome or Firefox.
+
+HTTP and HTTPS:
+HTTPS is used to get this website and view it in the browser.
+Layer 7 doesn’t include the applications themselves, like Chrome or Firefox, but rather the protocols that interact with the application, like HTTP or HTTPS.
+
+Key tasks:
+
+Identifying communication partners.
+Synchronizing communication.
+Presentation Layer:
+The data in the application layer is in application format, and it needs to be translated into a different format to be sent over the network.
+This layer’s job is to translate between application and network formats.
+Application data is not readable for other layers, so we need to change the data type for the other layers.
+
+Session Layer:
+Controls dialogues between communicating hosts.
+Establishes, manages, and terminates connections between local applications and remote applications.
+
+Application, presentation, and session layers are typically handled by application developers, not network engineers.
+
+Transport Layer:
+Segments and reassembles data for communication between end hosts.
+Breaks large pieces of data into smaller segments that can be sent more easily over the network and are less likely to cause transmission problems.
+
+Layer 4 segments data and adds an L4 header to each segment.
+Data + L4 header = Segment.
+
+This layer is responsible for host-to-host communication.
+
+Network Layer:
+Provides connectivity between end hosts on different networks (outside of LAN).
+Provides logical addressing (IP addresses) that work for their destination.
+Enables path selection between source and destination.
+
+Routers operate at Layer 3 and are Layer 3 devices.
+After the network layer, our data looks like this:
+Data + L4 header + L3 header = Packet.
+
+The L3 header includes the source and destination IP addresses for the segment.
+
+Data Link Layer:
+In this layer, we add an L2 trailer to the packet. This is called a frame.
+
+Key tasks:
+
+Provides node-to-node connectivity and data transfer (PC to switch, switch to router, etc.).
+Defines how data is formatted for transmission over a physical medium.
+Detects and corrects physical layer errors.
+Switches operate at Layer 2 and determine where to send data.
+
+Physical Layer:
+Defines the physical characteristics of the medium used to transfer data between devices (e.g., voltage levels, maximum transmission distance, etc.).
+Digital bits are converted into electrical or radio signals.
+
+TCP/IP Model:
+The TCP/IP model has 4 layers:
+
+Application
+Transport
+Internet
+Link
