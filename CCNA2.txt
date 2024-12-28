@@ -1,0 +1,35 @@
+We cannot automatically run code on USB memory (before Windows 7, this could be done with autorun, but after Windows 7, this became impossible to prevent bad software).
+
+Although some 3rd party software do not fully perform this function, they can do similar work.
+these
+AutoRun Pro
+PStart
+PortableApps 
+SamLogic 
+TinyTask 
+ Although the above tools do not provide anything fully autonomous, they do provide semi-automatic 
+
+RUBBY DUCK
+The phenomenon called ruby ​​ducak is actually a USB-like device called HID (human interface device), that is, a piece of hardware such as a keyboard or a mouse that the computer accepts without asking or checking us. The purpose of this is that it allows us to directly access the device by avoiding the questions asked when we use a USB memory.
+
+some of these
+Arduino Leonardo
+Arduino Pro Micro
+Digispark USB (Attiny85)
+ESP32-S2 (with USB Support)
+STM32 Blue Pill
+Using these devices is possible with Arduino IDE
+For example, powershell commands can be written with these devices.
+
+These devices are generally devices with weak storage memory and low memory, so they may have difficulties in some issues such as storage. 
+
+For example, Attiny85 is a C++ device with 8 KB memory and 512 bytes of memory.
+
+void setup() {
+  DigiKeyboard.sendKeyStroke(0); 
+  DigiKeyboard.println("Hello World!");
+}
+
+above is an example code
+
+However, depending on how they are used with this small device, they can write malicious software or find the address of the device using a keylogger or IPSI.
